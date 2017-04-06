@@ -18,8 +18,8 @@ use Zend\Http\Request;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\Stdlib\Parameters;
 use ZF\Apigility\Doctrine\Server\Paginator\Adapter\DoctrineOrmAdapter;
-use ZF\Doctrine\QueryBuilder\Filter\Service\ORMFilterManager;
-use ZF\Doctrine\QueryBuilder\OrderBy\Service\ORMOrderByManager;
+use ZF\Doctrine\QueryBuilder\Filter\Service\FilterManager;
+use ZF\Doctrine\QueryBuilder\OrderBy\Service\OrderByManager;
 use ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOrm;
 use ZF\Rest\ResourceEvent;
 
@@ -77,12 +77,12 @@ class DefaultOrmTest extends TestCase
         $metadata = $this->prophesize(ClassMetadata::class)->reveal();
         $this->objectManager->getClassMetadata($entityClass)->willReturn($metadata);
 
-        $filterManager = $this->prophesize(ORMFilterManager::class);
+        $filterManager = $this->prophesize(FilterManager::class);
         $filterManager->filter($this->queryBuilder->reveal(), $metadata, 'foo-filter')->shouldBeCalledTimes(1);
 
         $this->serviceLocator->get('config')->willReturn([]);
-        $this->serviceLocator->has(ORMFilterManager::class)->willReturn(true);
-        $this->serviceLocator->get(ORMFilterManager::class)->willReturn($filterManager->reveal());
+        $this->serviceLocator->has(FilterManager::class)->willReturn(true);
+        $this->serviceLocator->get(FilterManager::class)->willReturn($filterManager->reveal());
 
         $resourceEvent = $this->getResourceEvent(['filter' => 'foo-filter']);
 
@@ -99,7 +99,7 @@ class DefaultOrmTest extends TestCase
         $metadata = $this->prophesize(ClassMetadata::class)->reveal();
         $this->objectManager->getClassMetadata($entityClass)->willReturn($metadata);
 
-        $filterManager = $this->prophesize(ORMFilterManager::class);
+        $filterManager = $this->prophesize(FilterManager::class);
         $filterManager->filter($this->queryBuilder->reveal(), $metadata, 'foo-filter-renamed')->shouldBeCalledTimes(1);
 
         $this->serviceLocator->get('config')->willReturn([
@@ -107,8 +107,8 @@ class DefaultOrmTest extends TestCase
                 'filter_key' => 'renamed-filter-param',
             ],
         ]);
-        $this->serviceLocator->has(ORMFilterManager::class)->willReturn(true);
-        $this->serviceLocator->get(ORMFilterManager::class)->willReturn($filterManager->reveal());
+        $this->serviceLocator->has(FilterManager::class)->willReturn(true);
+        $this->serviceLocator->get(FilterManager::class)->willReturn($filterManager->reveal());
 
         $resourceEvent = $this->getResourceEvent(['renamed-filter-param' => 'foo-filter-renamed']);
 
@@ -125,12 +125,12 @@ class DefaultOrmTest extends TestCase
         $metadata = $this->prophesize(ClassMetadata::class)->reveal();
         $this->objectManager->getClassMetadata($entityClass)->willReturn($metadata);
 
-        $orderByManager = $this->prophesize(ORMOrderByManager::class);
+        $orderByManager = $this->prophesize(OrderByManager::class);
         $orderByManager->orderBy($this->queryBuilder->reveal(), $metadata, 'foo-order-by')->shouldBeCalledTimes(1);
 
         $this->serviceLocator->get('config')->willReturn([]);
-        $this->serviceLocator->has(ORMOrderByManager::class)->willReturn(true);
-        $this->serviceLocator->get(ORMOrderByManager::class)->willReturn($orderByManager->reveal());
+        $this->serviceLocator->has(OrderByManager::class)->willReturn(true);
+        $this->serviceLocator->get(OrderByManager::class)->willReturn($orderByManager->reveal());
 
         $resourceEvent = $this->getResourceEvent(['order-by' => 'foo-order-by']);
 
@@ -147,7 +147,7 @@ class DefaultOrmTest extends TestCase
         $metadata = $this->prophesize(ClassMetadata::class)->reveal();
         $this->objectManager->getClassMetadata($entityClass)->willReturn($metadata);
 
-        $orderByManager = $this->prophesize(ORMOrderByManager::class);
+        $orderByManager = $this->prophesize(OrderByManager::class);
         $orderByManager->orderBy($this->queryBuilder->reveal(), $metadata, 'FooOrderBy')->shouldBeCalledTimes(1);
 
         $this->serviceLocator->get('config')->willReturn([
@@ -155,8 +155,8 @@ class DefaultOrmTest extends TestCase
                 'order_by_key' => 'renamed-order-by-param',
             ],
         ]);
-        $this->serviceLocator->has(ORMOrderByManager::class)->willReturn(true);
-        $this->serviceLocator->get(ORMOrderByManager::class)->willReturn($orderByManager->reveal());
+        $this->serviceLocator->has(OrderByManager::class)->willReturn(true);
+        $this->serviceLocator->get(OrderByManager::class)->willReturn($orderByManager->reveal());
 
         $resourceEvent = $this->getResourceEvent(['renamed-order-by-param' => 'FooOrderBy']);
 
@@ -173,17 +173,17 @@ class DefaultOrmTest extends TestCase
         $metadata = $this->prophesize(ClassMetadata::class)->reveal();
         $this->objectManager->getClassMetadata($entityClass)->willReturn($metadata);
 
-        $filterManager = $this->prophesize(ORMFilterManager::class);
+        $filterManager = $this->prophesize(FilterManager::class);
         $filterManager->filter($this->queryBuilder->reveal(), $metadata, 'foo-filter')->shouldBeCalledTimes(1);
 
-        $orderByManager = $this->prophesize(ORMOrderByManager::class);
+        $orderByManager = $this->prophesize(OrderByManager::class);
         $orderByManager->orderBy($this->queryBuilder->reveal(), $metadata, 'foo-order-by')->shouldBeCalledTimes(1);
 
         $this->serviceLocator->get('config')->willReturn([]);
-        $this->serviceLocator->has(ORMOrderByManager::class)->willReturn(true);
-        $this->serviceLocator->get(ORMOrderByManager::class)->willReturn($orderByManager->reveal());
-        $this->serviceLocator->has(ORMFilterManager::class)->willReturn(true);
-        $this->serviceLocator->get(ORMFilterManager::class)->willReturn($filterManager->reveal());
+        $this->serviceLocator->has(OrderByManager::class)->willReturn(true);
+        $this->serviceLocator->get(OrderByManager::class)->willReturn($orderByManager->reveal());
+        $this->serviceLocator->has(FilterManager::class)->willReturn(true);
+        $this->serviceLocator->get(FilterManager::class)->willReturn($filterManager->reveal());
 
         $resourceEvent = $this->getResourceEvent([
             'filter' => 'foo-filter',

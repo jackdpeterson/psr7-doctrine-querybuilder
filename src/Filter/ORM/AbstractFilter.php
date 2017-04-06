@@ -8,7 +8,7 @@ namespace ZF\Doctrine\QueryBuilder\Filter\ORM;
 
 use DateTime;
 use ZF\Doctrine\QueryBuilder\Filter\FilterInterface;
-use ZF\Doctrine\QueryBuilder\Filter\Service\ORMFilterManager;
+use ZF\Doctrine\QueryBuilder\Filter\Service\FilterManager;
 
 abstract class AbstractFilter implements FilterInterface
 {
@@ -21,7 +21,7 @@ abstract class AbstractFilter implements FilterInterface
         $this->setFilterManager($params[0]);
     }
 
-    public function setFilterManager(ORMFilterManager $filterManager)
+    public function setFilterManager(FilterManager $filterManager)
     {
         $this->filterManager = $filterManager;
         return $this;

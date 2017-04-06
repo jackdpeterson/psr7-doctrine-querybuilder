@@ -7,7 +7,7 @@
 namespace ZF\Doctrine\QueryBuilder\OrderBy\ODM;
 
 use ZF\Doctrine\QueryBuilder\OrderBy\OrderByInterface;
-use ZF\Doctrine\QueryBuilder\OrderBy\Service\ODMOrderByManager;
+use ZF\Doctrine\QueryBuilder\OrderBy\Service\OrderByManager;
 
 abstract class AbstractOrderBy implements OrderByInterface
 {
@@ -20,7 +20,7 @@ abstract class AbstractOrderBy implements OrderByInterface
         $this->setOrderByManager($params[0]);
     }
 
-    public function setOrderByManager(ODMOrderByManager $orderByManager)
+    public function setOrderByManager(OrderByManager $orderByManager)
     {
         $this->orderByManager = $orderByManager;
 

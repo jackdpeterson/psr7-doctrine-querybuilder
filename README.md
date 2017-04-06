@@ -1,9 +1,5 @@
-ZF Doctrine QueryBuilder
-========================
-
-[![Build Status](https://travis-ci.org/zfcampus/zf-doctrine-querybuilder.svg?branch=master)](https://travis-ci.org/zfcampus/zf-doctrine-querybuilder)
-[![Coverage Status](https://coveralls.io/repos/github/zfcampus/zf-doctrine-querybuilder/badge.svg?branch=master)](https://coveralls.io/github/zfcampus/zf-doctrine-querybuilder?branch=master)
-[![Total Downloads](https://poser.pugx.org/zfcampus/zf-doctrine-querybuilder/downloads)](https://packagist.org/packages/zfcampus/zf-doctrine-querybuilder)
+PSR-7 Doctrine QueryBuilder (Forked from ZF-Doctrine-QueryBuilder)
+==================================================================
 
 This library provides query builder directives from array parameters. This library was designed
 to apply filters from an HTTP request to give an API fluent filter and order-by dialects.
@@ -40,7 +36,7 @@ Installation of this module uses composer. For composer documentation, please re
 [getcomposer.org](http://getcomposer.org/).
 
 ```bash
-$ composer require zfcampus/zf-doctrine-querybuilder
+$ composer require jackdpeterson/psr7-doctrine-querybuilder
 ```
 
 Once installed, add `ZF\Doctrine\QueryBuilder` to your list of modules inside
@@ -59,8 +55,8 @@ Copy `config/zf-doctrine-querybuilder.global.php.dist` to `config/autoload/zf-do
 and edit the list of aliases for orm and odm to those you want enabled by default.
 
 
-Use With Apigility Doctrine
----------------------------
+Use With Slim Framework
+-----------------------
 
 To enable all filters you may override the default query providers in `zf-apigility-doctrine`.
 Add this to your `zf-doctrine-querybuilder.global.php` config file and filters and order-by will be applied
