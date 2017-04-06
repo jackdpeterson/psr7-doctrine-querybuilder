@@ -11,7 +11,7 @@ return [
         'DoctrineMongoODMModule',
         'Db',
         'DbMongo',
-        'ZF\Doctrine\QueryBuilder',
+        'jackdpeterson\Doctrine\QueryBuilder',
     ],
     'module_listener_options' => [
         'config_glob_paths' => [
@@ -21,7 +21,7 @@ return [
             __DIR__ . '/../vendor',
             'DbMongo' => __DIR__ . '/../assets/module/DbMongo',
             'Db' => __DIR__ . '/../assets/module/Db',
-            'ZF\Doctrine\QueryBuilder' => __DIR__ . '/../../',
+            'jackdpeterson\Doctrine\QueryBuilder' => __DIR__ . '/../../',
         ],
     ],
 ];

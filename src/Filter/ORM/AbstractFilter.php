@@ -4,11 +4,11 @@
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZF\Doctrine\QueryBuilder\Filter\ORM;
+namespace jackdpeterson\Doctrine\QueryBuilder\Filter\ORM;
 
 use DateTime;
-use ZF\Doctrine\QueryBuilder\Filter\FilterInterface;
-use ZF\Doctrine\QueryBuilder\Filter\Service\FilterManager;
+use jackdpeterson\Doctrine\QueryBuilder\Filter\FilterInterface;
+use jackdpeterson\Doctrine\QueryBuilder\Filter\Service\FilterManager;
 
 abstract class AbstractFilter implements FilterInterface
 {

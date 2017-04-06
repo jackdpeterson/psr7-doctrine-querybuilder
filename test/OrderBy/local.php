@@ -6,7 +6,7 @@
 
 use Doctrine\DBAL\Driver\PDOSqlite\Driver;
 use Zend\ServiceManager\Factory\InvokableFactory;
-use ZF\Doctrine\QueryBuilder\OrderBy;
+use jackdpeterson\Doctrine\QueryBuilder\OrderBy;
 
 return [
     'doctrine' => [

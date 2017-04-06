@@ -4,10 +4,10 @@
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZF\Doctrine\QueryBuilder\Filter\ODM;
+namespace jackdpeterson\Doctrine\QueryBuilder\Filter\ODM;
 
 use DateTime;
-use ZF\Doctrine\QueryBuilder\Filter\FilterInterface;
+use jackdpeterson\Doctrine\QueryBuilder\Filter\FilterInterface;
 
 abstract class AbstractFilter implements FilterInterface
 {

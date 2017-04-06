@@ -2520,12 +2520,12 @@
                     "dev-develop": "1.3-dev"
                 },
                 "zf": {
-                    "module": "ZF\\ApiProblem"
+                    "module": "jackdpeterson\\ApiProblem"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\ApiProblem\\": "src/"
+                    "jackdpeterson\\ApiProblem\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2594,12 +2594,12 @@
                     "dev-develop": "1.4-dev"
                 },
                 "zf": {
-                    "module": "ZF\\Apigility"
+                    "module": "jackdpeterson\\Apigility"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\Apigility\\": "src/"
+                    "jackdpeterson\\Apigility\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2666,14 +2666,14 @@
                 },
                 "zf": {
                     "module": [
-                        "ZF\\Apigility\\Doctrine\\Admin",
-                        "ZF\\Apigility\\Doctrine\\Server"
+                        "jackdpeterson\\Apigility\\Doctrine\\Admin",
+                        "jackdpeterson\\Apigility\\Doctrine\\Server"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\Apigility\\Doctrine\\": "src/"
+                    "jackdpeterson\\Apigility\\Doctrine\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2720,7 +2720,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\Apigility\\Provider\\": "src/"
+                    "jackdpeterson\\Apigility\\Provider\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2779,12 +2779,12 @@
                     "dev-develop": "1.4-dev"
                 },
                 "zf": {
-                    "module": "ZF\\ContentNegotiation"
+                    "module": "jackdpeterson\\ContentNegotiation"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\ContentNegotiation\\": "src/"
+                    "jackdpeterson\\ContentNegotiation\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2840,12 +2840,12 @@
                     "dev-develop": "1.4-dev"
                 },
                 "zf": {
-                    "module": "ZF\\ContentValidation"
+                    "module": "jackdpeterson\\ContentValidation"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\ContentValidation\\": "src/"
+                    "jackdpeterson\\ContentValidation\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2900,12 +2900,12 @@
                     "dev-develop": "1.5-dev"
                 },
                 "zf": {
-                    "module": "ZF\\Hal"
+                    "module": "jackdpeterson\\Hal"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\Hal\\": "src/"
+                    "jackdpeterson\\Hal\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2963,12 +2963,12 @@
                     "dev-develop": "1.5-dev"
                 },
                 "zf": {
-                    "module": "ZF\\MvcAuth"
+                    "module": "jackdpeterson\\MvcAuth"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\MvcAuth\\": "src/"
+                    "jackdpeterson\\MvcAuth\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3034,7 +3034,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\OAuth2\\": "src/"
+                    "jackdpeterson\\OAuth2\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3093,12 +3093,12 @@
                     "dev-develop": "1.4-dev"
                 },
                 "zf": {
-                    "module": "ZF\\Rest"
+                    "module": "jackdpeterson\\Rest"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\Rest\\": "src/"
+                    "jackdpeterson\\Rest\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3152,12 +3152,12 @@
                     "dev-develop": "1.4-dev"
                 },
                 "zf": {
-                    "module": "ZF\\Rpc"
+                    "module": "jackdpeterson\\Rpc"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\Rpc\\": "src/"
+                    "jackdpeterson\\Rpc\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3208,12 +3208,12 @@
                     "dev-develop": "1.3-dev"
                 },
                 "zf": {
-                    "module": "ZF\\Versioning"
+                    "module": "jackdpeterson\\Versioning"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ZF\\Versioning\\": "src/"
+                    "jackdpeterson\\Versioning\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

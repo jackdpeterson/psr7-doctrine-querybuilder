@@ -17,11 +17,11 @@ use Prophecy\Prophecy\ProphecyInterface;
 use Zend\Http\Request;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\Stdlib\Parameters;
-use ZF\Apigility\Doctrine\Server\Paginator\Adapter\DoctrineOrmAdapter;
-use ZF\Doctrine\QueryBuilder\Filter\Service\FilterManager;
-use ZF\Doctrine\QueryBuilder\OrderBy\Service\OrderByManager;
-use ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOrm;
-use ZF\Rest\ResourceEvent;
+use jackdpeterson\Apigility\Doctrine\Server\Paginator\Adapter\DoctrineOrmAdapter;
+use jackdpeterson\Doctrine\QueryBuilder\Filter\Service\FilterManager;
+use jackdpeterson\Doctrine\QueryBuilder\OrderBy\Service\OrderByManager;
+use jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOrm;
+use jackdpeterson\Rest\ResourceEvent;
 
 class DefaultOrmTest extends TestCase
 {

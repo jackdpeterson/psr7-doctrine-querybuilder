@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZF\Doctrine\QueryBuilder\Filter;
+namespace jackdpeterson\Doctrine\QueryBuilder\Filter;
 
 interface FilterInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZF\Doctrine\QueryBuilder\Filter\Service;
+namespace jackdpeterson\Doctrine\QueryBuilder\Filter\Service;
 
 use Doctrine\ORM\QueryBuilder;
 use RuntimeException;
-use ZF\Doctrine\QueryBuilder\Filter\FilterInterface;
+use jackdpeterson\Doctrine\QueryBuilder\Filter\FilterInterface;
 
 class FilterManager
 {

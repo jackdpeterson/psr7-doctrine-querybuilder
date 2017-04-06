@@ -2,7 +2,7 @@
 
 namespace Db;
 
-use ZF\Apigility\Provider\ApigilityProviderInterface;
+use jackdpeterson\Apigility\Provider\ApigilityProviderInterface;
 
 class Module implements ApigilityProviderInterface
 {

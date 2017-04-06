@@ -9,8 +9,8 @@ namespace ZFTest\Doctrine\QueryBuilder\Query\Provider;
 use PHPUnit_Framework_TestCase as TestCase;
 use Zend\ServiceManager\AbstractPluginManager;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOdm;
-use ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOdmFactory;
+use jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOdm;
+use jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOdmFactory;
 
 class DefaultOdmFactoryTest extends TestCase
 {

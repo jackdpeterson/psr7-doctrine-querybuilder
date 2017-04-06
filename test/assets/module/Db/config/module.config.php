@@ -4,7 +4,7 @@ namespace Db;
 
 use Doctrine\ORM\Mapping\Driver\XmlDriver;
 use Zend\ServiceManager\Factory\InvokableFactory;
-use ZF\Doctrine\QueryBuilder\Filter;
+use jackdpeterson\Doctrine\QueryBuilder\Filter;
 
 return [
     'zf-doctrine-querybuilder-filter-orm' => [

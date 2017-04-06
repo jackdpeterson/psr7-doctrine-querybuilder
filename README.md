@@ -39,7 +39,7 @@ Installation of this module uses composer. For composer documentation, please re
 $ composer require jackdpeterson/psr7-doctrine-querybuilder
 ```
 
-Once installed, add `ZF\Doctrine\QueryBuilder` to your list of modules inside
+Once installed, add `jackdpeterson\Doctrine\QueryBuilder` to your list of modules inside
 `config/application.config.php`.
 
 > ### zf-component-installer
@@ -66,12 +66,12 @@ through `zf-doctrine-querybuilder-options`:
 ```php
 'zf-apigility-doctrine-query-provider' => [
     'aliases' => [
-        'default_orm' => \ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOrm::class,
-        'default_odm' => \ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOdm::class,
+        'default_orm' => \jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOrm::class,
+        'default_odm' => \jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOdm::class,
     ],
     'factories' => [
-        \ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOrm::class => \ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOrmFactory::class,
-        \ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOdm::class => \ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOdmFactory::class,
+        \jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOrm::class => \jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOrmFactory::class,
+        \jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOdm::class => \jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOdmFactory::class,
     ],
 ],
 ```
@@ -84,18 +84,18 @@ Configuration example
 ```php
 'zf-doctrine-querybuilder-orderby-orm' => [
     'aliases' => [
-        'field' => \ZF\Doctrine\QueryBuilder\OrderBy\ORM\Field::class,
+        'field' => \jackdpeterson\Doctrine\QueryBuilder\OrderBy\ORM\Field::class,
     ],
     'factories' => [
-        \ZF\Doctrine\QueryBuilder\OrderBy\ORM\Field::class => \Zend\ServiceManager\Factory\InvokableFactory::class,
+        \jackdpeterson\Doctrine\QueryBuilder\OrderBy\ORM\Field::class => \Zend\ServiceManager\Factory\InvokableFactory::class,
     ],
 ],
 'zf-doctrine-querybuilder-filter-orm' => [
     'aliases' => [
-        'eq' => \ZF\Doctrine\QueryBuilder\Filter\ORM\Equals::class,
+        'eq' => \jackdpeterson\Doctrine\QueryBuilder\Filter\ORM\Equals::class,
     ],
     'factories' => [
-        \ZF\Doctrine\QueryBuilder\Filter\ORM\Equals::class => \Zend\ServiceManager\Factory\InvokableFactory::class,
+        \jackdpeterson\Doctrine\QueryBuilder\Filter\ORM\Equals::class => \Zend\ServiceManager\Factory\InvokableFactory::class,
     ],
 ],
 ```
@@ -290,10 +290,10 @@ To enable inner join add this to your configuration.
 ```php
 'zf-doctrine-querybuilder-filter-orm' => [
     'aliases' => [
-        'innerjoin' => \ZF\Doctrine\QueryBuilder\Filter\ORM\InnerJoin::class,
+        'innerjoin' => \jackdpeterson\Doctrine\QueryBuilder\Filter\ORM\InnerJoin::class,
     ],
     'factories' => [
-        \ZF\Doctrine\QueryBuilder\Filter\ORM\InnerJoin => \Zend\ServiceManager\Factory\InvokableFactory::class,
+        \jackdpeterson\Doctrine\QueryBuilder\Filter\ORM\InnerJoin => \Zend\ServiceManager\Factory\InvokableFactory::class,
     ],
 ],
 ```

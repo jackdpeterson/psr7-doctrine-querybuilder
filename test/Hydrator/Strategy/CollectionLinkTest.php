@@ -9,7 +9,7 @@ namespace ZFTest\Doctrine\QueryBuilder\Hydrator\Strategy;
 use PHPUnit_Framework_TestCase;
 use stdClass;
 use Zend\ServiceManager\ServiceManager;
-use ZF\Doctrine\QueryBuilder\Hydrator\Strategy\CollectionLink;
+use jackdpeterson\Doctrine\QueryBuilder\Hydrator\Strategy\CollectionLink;
 
 class CollectionLinkTest extends PHPUnit_Framework_TestCase
 {

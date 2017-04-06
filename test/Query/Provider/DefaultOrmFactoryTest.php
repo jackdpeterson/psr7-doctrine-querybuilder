@@ -9,8 +9,8 @@ namespace ZFTest\Doctrine\QueryBuilder\Query\Provider;
 use PHPUnit_Framework_TestCase as TestCase;
 use Zend\ServiceManager\AbstractPluginManager;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOrm;
-use ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOrmFactory;
+use jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOrm;
+use jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOrmFactory;
 
 class DefaultOrmFactoryTest extends TestCase
 {

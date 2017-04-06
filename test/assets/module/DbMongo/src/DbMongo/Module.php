@@ -2,7 +2,7 @@
 
 namespace DbMongo;
 
-use ZF\Apigility\Provider\ApigilityProviderInterface;
+use jackdpeterson\Apigility\Provider\ApigilityProviderInterface;
 
 class Module implements ApigilityProviderInterface
 {

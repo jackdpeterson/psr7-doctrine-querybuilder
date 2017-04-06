@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Use the appropriate Use statement when passing around these arrays!
+ */
+return [
+    'ORM - Order By' => [
+        'field' => OrderBy\ORM\Field::class,
+    ],
+    'ODM - Order By' => [
+        'field' => OrderBy\ODM\Field::class,
+    ],
+    'ORM - filters' => [
+
+        'eq' => Filter\ORM\Equals::class,
+        'neq' => Filter\ORM\NotEquals::class,
+        'lt' => Filter\ORM\LessThan::class,
+        'lte' => Filter\ORM\LessThanOrEquals::class,
+        'gt' => Filter\ORM\GreaterThan::class,
+        'gte' => Filter\ORM\GreaterThanOrEquals::class,
+        'isnull' => Filter\ORM\IsNull::class,
+        'isnotnull' => Filter\ORM\IsNotNull::class,
+        'in' => Filter\ORM\In::class,
+        'notin' => Filter\ORM\NotIn::class,
+        'between' => Filter\ORM\Between::class,
+        'like' => Filter\ORM\Like::class,
+        'notlike' => Filter\ORM\NotLike::class,
+        'ismemberof' => Filter\ORM\IsMemberOf::class,
+        'orx' => Filter\ORM\OrX::class,
+        'andx' => Filter\ORM\AndX::class,
+    ],
+    'ODM - filters' => [
+        'eq' => Filter\ODM\Equals::class,
+        'neq' => Filter\ODM\NotEquals::class,
+        'lt' => Filter\ODM\LessThan::class,
+        'lte' => Filter\ODM\LessThanOrEquals::class,
+        'gt' => Filter\ODM\GreaterThan::class,
+        'gte' => Filter\ODM\GreaterThanOrEquals::class,
+        'isnull' => Filter\ODM\IsNull::class,
+        'isnotnull' => Filter\ODM\IsNotNull::class,
+        'in' => Filter\ODM\In::class,
+        'notin' => Filter\ODM\NotIn::class,
+        'between' => Filter\ODM\Between::class,
+        'like' => Filter\ODM\Like::class,
+        'regex' => Filter\ODM\Regex::class,
+    ];

@@ -4,10 +4,10 @@
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZF\Doctrine\QueryBuilder\OrderBy\ODM;
+namespace jackdpeterson\Doctrine\QueryBuilder\OrderBy\ODM;
 
-use ZF\Doctrine\QueryBuilder\OrderBy\OrderByInterface;
-use ZF\Doctrine\QueryBuilder\OrderBy\Service\OrderByManager;
+use jackdpeterson\Doctrine\QueryBuilder\OrderBy\OrderByInterface;
+use jackdpeterson\Doctrine\QueryBuilder\OrderBy\Service\OrderByManager;
 
 abstract class AbstractOrderBy implements OrderByInterface
 {

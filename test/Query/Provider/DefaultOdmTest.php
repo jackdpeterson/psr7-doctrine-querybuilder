@@ -17,11 +17,11 @@ use Prophecy\Prophecy\ProphecyInterface;
 use Zend\Http\Request;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\Stdlib\Parameters;
-use ZF\Apigility\Doctrine\Server\Paginator\Adapter\DoctrineOdmAdapter;
-use ZF\Doctrine\QueryBuilder\Filter\Service\ODMFilterManager;
-use ZF\Doctrine\QueryBuilder\OrderBy\Service\ODMOrderByManager;
-use ZF\Doctrine\QueryBuilder\Query\Provider\DefaultOdm;
-use ZF\Rest\ResourceEvent;
+use jackdpeterson\Apigility\Doctrine\Server\Paginator\Adapter\DoctrineOdmAdapter;
+use jackdpeterson\Doctrine\QueryBuilder\Filter\Service\ODMFilterManager;
+use jackdpeterson\Doctrine\QueryBuilder\OrderBy\Service\ODMOrderByManager;
+use jackdpeterson\Doctrine\QueryBuilder\Query\Provider\DefaultOdm;
+use jackdpeterson\Rest\ResourceEvent;
 
 class DefaultOdmTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ZF\Doctrine\QueryBuilder\OrderBy\Service;
+namespace jackdpeterson\Doctrine\QueryBuilder\OrderBy\Service;
 
 use Doctrine\ORM\QueryBuilder;
 use RuntimeException;
-use ZF\Doctrine\QueryBuilder\OrderBy\OrderByInterface;
+use jackdpeterson\Doctrine\QueryBuilder\OrderBy\OrderByInterface;
 
 class OrderByManager
 {

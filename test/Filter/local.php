@@ -5,7 +5,7 @@
  */
 
 use Zend\ServiceManager\Factory\InvokableFactory;
-use ZF\Doctrine\QueryBuilder\Filter;
+use jackdpeterson\Doctrine\QueryBuilder\Filter;
 
 return [
     'doctrine' => [

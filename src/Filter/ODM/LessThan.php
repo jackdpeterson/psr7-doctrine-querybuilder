@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZF\Doctrine\QueryBuilder\Filter\ODM;
+namespace jackdpeterson\Doctrine\QueryBuilder\Filter\ODM;
 
 class LessThan extends AbstractFilter
 {
