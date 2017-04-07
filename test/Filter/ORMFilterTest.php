@@ -4,12 +4,12 @@
  * @copyright Copyright (c) 2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZFTest\Doctrine\QueryBuilder\Filter;
+namespace jackdpetersonTest\Doctrine\QueryBuilder\Filter;
 
 use DateTime;
 use Db\Entity;
 use Doctrine\ORM\Tools\SchemaTool;
-use ZFTest\Doctrine\QueryBuilder\TestCase;
+use jackdpetersonTest\Doctrine\QueryBuilder\TestCase;
 
 class ORMFilterTest extends TestCase
 {

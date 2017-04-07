@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZFTest\Doctrine\QueryBuilder\Hydrator\Strategy;
+namespace jackdpetersonTest\Doctrine\QueryBuilder\Hydrator\Strategy;
 
 use PHPUnit_Framework_TestCase;
 use stdClass;

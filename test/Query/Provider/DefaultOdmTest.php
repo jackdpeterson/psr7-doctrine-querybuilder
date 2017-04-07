@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZFTest\Doctrine\QueryBuilder\Query\Provider;
+namespace jackdpetersonTest\Doctrine\QueryBuilder\Query\Provider;
 
 use Doctrine\MongoDB\Cursor;
 use Doctrine\ODM\MongoDB\DocumentManager as ObjectManager;

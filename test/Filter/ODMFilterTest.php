@@ -4,11 +4,11 @@
  * @copyright Copyright (c) 2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-namespace ZFTest\Doctrine\QueryBuilder\Filter;
+namespace jackdpetersonTest\Doctrine\QueryBuilder\Filter;
 
 use DateTime;
 use DbMongo\Document;
-use ZFTest\Doctrine\QueryBuilder\TestCase;
+use jackdpetersonTest\Doctrine\QueryBuilder\TestCase;
 
 class ODMFilterTest extends TestCase
 {
@@ -30,6 +30,10 @@ class ODMFilterTest extends TestCase
 
     public function setUp()
     {
+        
+        echo "set up!";
+        die();
+        
         $this->setApplicationConfig(
             include __DIR__ . '/application.config.php'
         );
