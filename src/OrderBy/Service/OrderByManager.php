@@ -28,13 +28,16 @@ class OrderByManager
             throw new \RuntimeException("QB Order By Handler Not found: " . $orderByHandlerName);
         }
 
-        if (! class_exists($this->orderByHandlers[$orderByHandlerName])) {
+        if (!class_exists($this->orderByHandlers[$orderByHandlerName])) {
             throw new \RuntimeException("QB Order By Handler Class Not found in autoloader: " . $orderByHandlerName);
         }
 
-        $orderByHandler = new $this->orderByHandlers[$orderByHandlerName]();
+        if (!is_a($this->orderByHandlers[$orderByHandlerName], OrderByInterface::class, true)) {
+            throw new \RuntimeException('Provided class name is not an OrderByInterface');
+        }
+        $orderByHandler = new $this->filters[$filterName]([$this]);
 
-        if (!$orderByHandler instanceof OrderByInterface ) {
+        if (!$orderByHandler instanceof OrderByInterface) {
             throw new \RuntimeException(sprintf('Requested %1$s however, %1$s is not an instance of OrderByInterface!',
                 $orderByHandlerName));
         }

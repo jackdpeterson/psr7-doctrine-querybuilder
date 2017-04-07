@@ -26,12 +26,18 @@ class FilterManager
         if (!array_key_exists($filterName, $this->filters)) {
             throw new \RuntimeException("QB Filter Not found: " . $filterName);
         }
-        if (!$this->filters[$filterName] instanceof FilterInterface) {
+
+        if (!is_a($this->filters[$filterName], FilterInterface::class, true)) {
+            throw new \RuntimeException('Provided class name is not a FilterInterface');
+        }
+        $filter = new $this->filters[$filterName]([$this]);
+
+        if (!$filter instanceof FilterInterface) {
             throw new \RuntimeException(sprintf('Requested %1$s however, %1$s is not an instance of FilterInterface!',
                 $filterName));
         }
 
-        return $this->filters[$filterName];
+        return $filter;
     }
 
 
