@@ -40,7 +40,7 @@ class OrderByManager
                 $orderByHandlerName));
         }
 
-        return $this->orderByHandlers[$orderByHandlerName];
+        return $orderByHandler;
     }
 
     public function orderBy(QueryBuilder $queryBuilder, $metadata, $orderBy)
